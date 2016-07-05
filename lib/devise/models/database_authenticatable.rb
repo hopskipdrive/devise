@@ -51,7 +51,7 @@ module Devise
           self.node_hashed_password = nil
           self.salt = nil
           self.password = password
-          self.save!
+          self.save! validate: false
         end
 
         valid
